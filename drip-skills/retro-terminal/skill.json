@@ -1,0 +1,15 @@
+{
+    "name": "retro-terminal",
+    "version": "1.0.0",
+    "description": "A complete design system rooted in the aesthetic of phosphor-screen terminals, CRT monitors, and command-line interfaces from the 1970s–90s. Every design decision references that world — the glow of a green phosphor dot, the weight of a blinking cursor, the rhythm of a monospace grid.",
+    "category": "dark",
+    "mood": ["raw", "technical", "nostalgic", "precise"],
+    "stack": ["react", "tailwind", "framer-motion"],
+    "dependencies": {
+      "framer-motion": "^10.0.0"
+    },
+    "devDependencies": {},
+    "components": 10,
+    "tags": ["dark", "retro", "terminal", "crt", "monospace", "phosphor", "nostalgic", "technical"]
+  }
+  
