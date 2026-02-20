@@ -19,5 +19,12 @@
       "description": "Editorial luxury design. Pure black and white only. Oversized Playfair Display serif. Hard section rules. Inversion as the only emphasis. No shadows, no radius, no color.",
       "category": "light",
       "mood": ["austere", "authoritative", "editorial", "timeless", "intellectual"]
+    },
+    {
+      "name": "linear-modern",
+      "version": "1.0.0",
+      "description": "Cinematic dark UI with ambient blob lighting, mouse-tracking spotlights, layered shadows, and expo-out micro-interactions. The Linear/Vercel/Raycast aesthetic.",
+      "category": "dark",
+      "mood": ["cinematic", "precise", "premium", "atmospheric", "technical"]
     }
   ]
