@@ -1,0 +1,16 @@
+[
+    {
+      "name": "retro-terminal",
+      "version": "1.0.0",
+      "description": "Phosphor green terminal aesthetic. CRT scanlines. Zero border radius.",
+      "category": "dark",
+      "mood": ["technical", "nostalgic", "raw"]
+    },
+    {
+      "name": "playful-geometric",
+      "version": "1.0.0",
+      "description": "Memphis-inspired. Hard pop shadows. Bouncy interactions. Confetti palette.",
+      "category": "light",
+      "mood": ["playful", "optimistic", "tactile"]
+    }
+  ]
