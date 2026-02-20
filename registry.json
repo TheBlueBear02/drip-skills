@@ -12,5 +12,12 @@
       "description": "Memphis-inspired. Hard pop shadows. Bouncy interactions. Confetti palette.",
       "category": "light",
       "mood": ["playful", "optimistic", "tactile"]
+    },
+    {
+      "name": "minimalist-monochrome",
+      "version": "1.0.0",
+      "description": "Editorial luxury design. Pure black and white only. Oversized Playfair Display serif. Hard section rules. Inversion as the only emphasis. No shadows, no radius, no color.",
+      "category": "light",
+      "mood": ["austere", "authoritative", "editorial", "timeless", "intellectual"]
     }
   ]
