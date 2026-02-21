@@ -1,0 +1,47 @@
+{
+  "name": "botanical-organic",
+  "version": "1.0.0",
+  "description": "A digital ode to nature. Warm alabaster canvas, Playfair Display with italic emphasis, arch-shaped images, slow graceful motion, paper grain texture, and green-tinted diffused shadows. Whispers rather than shouts.",
+  "category": "elegant",
+  "mood": ["organic", "serene", "artisanal", "warm", "sophisticated", "botanical"],
+  "stack": ["react", "tailwind"],
+  "dependencies": {
+    "lucide-react": "^0.263.0"
+  },
+  "author": "getdrip",
+  "preview": "https://getdrip.dev/skills/botanical-organic",
+  "docs": "https://getdrip.dev/docs/botanical-organic",
+  "tags": [
+    "botanical", "organic", "serif", "elegant", "warm",
+    "nature", "artisanal", "wellness", "sustainable",
+    "playfair", "arch", "paper-grain", "soft-shadows"
+  ],
+  "palette": {
+    "background":   "#F9F8F4",
+    "foreground":   "#2D3A31",
+    "primary":      "#8C9A84",
+    "secondary":    "#DCCFC2",
+    "border":       "#E6E2DA",
+    "interactive":  "#C27B66"
+  },
+  "fonts": {
+    "heading": "Playfair Display",
+    "body":    "Source Sans 3"
+  },
+  "signature_traits": [
+    "SVG paper grain fixed overlay (opacity 0.015) — mandatory",
+    "Playfair Display with italic key words in headlines",
+    "Arch border-radius (200px 200px 0 0) on hero images",
+    "Green-tinted diffused shadows rgba(45,58,49,...)",
+    "rounded-3xl (24px) on all cards",
+    "rounded-full (pill) on all buttons",
+    "500ms ease-out card hover lift",
+    "700ms ease-out image scale",
+    "Staggered grid (every 2nd card +48px translateY)",
+    "Terracotta #C27B66 on all hover/interactive states",
+    "1px border-only, #E6E2DA stone color",
+    "lucide-react strokeWidth={1.5} thin icons",
+    "Warm alabaster #F9F8F4 background (never pure white)",
+    "Deep forest green #2D3A31 text (never pure black)"
+  ]
+}

@@ -1,0 +1,139 @@
+/* ============================================================
+   BOTANICAL ORGANIC SKILL — globals.css
+   ============================================================ */
+
+/* ── FONT IMPORT ──────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Source+Sans+3:wght@400;500&display=swap');
+
+/* ── CSS VARIABLES ────────────────────────────────────────── */
+:root {
+  --color-bg:          #F9F8F4;
+  --color-fg:          #2D3A31;
+  --color-primary:     #8C9A84;
+  --color-secondary:   #DCCFC2;
+  --color-border:      #E6E2DA;
+  --color-interactive: #C27B66;
+  --color-surface:     #FFFFFF;
+  --color-muted:       rgba(45,58,49,0.55);
+
+  --shadow-xs:  0 2px 4px rgba(45,58,49,0.04);
+  --shadow-sm:  0 4px 6px rgba(45,58,49,0.05);
+  --shadow-md:  0 10px 15px rgba(45,58,49,0.06);
+  --shadow-lg:  0 20px 40px rgba(45,58,49,0.08);
+  --shadow-xl:  0 25px 50px rgba(45,58,49,0.12);
+  --shadow-2xl: 0 40px 80px rgba(45,58,49,0.15);
+
+  --radius-sm:   12px;
+  --radius-md:   20px;
+  --radius-lg:   24px;
+  --radius-full: 9999px;
+  --radius-arch: 200px 200px 0 0;
+}
+
+/* ── BASE ──────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  color: var(--color-fg);
+}
+
+/* ── SELECTION ─────────────────────────────────────────────── */
+::selection {
+  background: var(--color-secondary);
+  color: var(--color-fg);
+}
+
+/* ── FOCUS ─────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ── SCROLLBAR ─────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 8px; }
+::-webkit-scrollbar-track  { background: var(--color-bg); }
+::-webkit-scrollbar-thumb  { background: var(--color-border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-primary); }
+
+/* ── SHADOW UTILITIES ──────────────────────────────────────── */
+.shadow-botanical-xs  { box-shadow: var(--shadow-xs); }
+.shadow-botanical-sm  { box-shadow: var(--shadow-sm); }
+.shadow-botanical-md  { box-shadow: var(--shadow-md); }
+.shadow-botanical-lg  { box-shadow: var(--shadow-lg); }
+.shadow-botanical-xl  { box-shadow: var(--shadow-xl); }
+.shadow-botanical-2xl { box-shadow: var(--shadow-2xl); }
+
+/* ── ARCH SHAPE ────────────────────────────────────────────── */
+.shape-arch {
+  border-radius: 200px 200px 0 0;
+  overflow: hidden;
+}
+
+/* ── BLOB SHAPE ────────────────────────────────────────────── */
+.shape-blob {
+  border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%;
+}
+
+/* ── ANIMATIONS ─────────────────────────────────────────────── */
+
+@keyframes botanical-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%       { transform: translateY(-8px) rotate(1deg); }
+}
+.animate-botanical-float {
+  animation: botanical-float 6s ease-in-out infinite;
+}
+
+@keyframes botanical-breathe {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.02); opacity: 0.85; }
+}
+.animate-botanical-breathe {
+  animation: botanical-breathe 4s ease-in-out infinite;
+}
+
+@keyframes botanical-fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-botanical-fade-up {
+  animation: botanical-fade-up 0.6s ease-out both;
+}
+
+@keyframes botanical-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.animate-botanical-fade-in {
+  animation: botanical-fade-in 0.5s ease-out both;
+}
+
+/* Stagger helpers */
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-300 { animation-delay: 300ms; }
+.animation-delay-500 { animation-delay: 500ms; }
+
+/* ── REDUCED MOTION ────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
