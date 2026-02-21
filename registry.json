@@ -26,12 +26,5 @@
       "description": "Digital punk rebellion against polished SaaS. Thick black borders. Hard ink shadows. Mechanical button press. Cream canvas. Space Grotesk Black. Loud, raw, confident.",
       "category": "bold",
       "mood": ["rebellious", "loud", "tactile", "energetic", "raw", "punk"]
-    },
-    {
-      "name": "botanical-organic",
-      "version": "1.0.0",
-      "description": "A digital ode to nature. Warm alabaster canvas, Playfair Display with italic emphasis, arch-shaped images, slow graceful motion, paper grain texture, and green-tinted diffused shadows. Whispers rather than shouts.",
-      "category": "elegant",
-      "mood": ["organic", "serene", "artisanal", "warm", "sophisticated", "botanical"]
     }
   ]
