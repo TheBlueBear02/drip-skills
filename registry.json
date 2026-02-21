@@ -1,30 +1,37 @@
 [
-    {
-      "name": "playful-geometric",
-      "version": "1.0.0",
-      "description": "Memphis-inspired. Hard pop shadows. Bouncy interactions. Confetti palette.",
-      "category": "light",
-      "mood": ["playful", "optimistic", "tactile"]
-    },
-    {
-      "name": "minimalist-monochrome",
-      "version": "1.0.0",
-      "description": "Editorial luxury design. Pure black and white only. Oversized Playfair Display serif. Hard section rules. Inversion as the only emphasis. No shadows, no radius, no color.",
-      "category": "light",
-      "mood": ["austere", "authoritative", "editorial", "timeless", "intellectual"]
-    },
-    {
-      "name": "linear-modern",
-      "version": "1.0.0",
-      "description": "Cinematic dark UI with ambient blob lighting, mouse-tracking spotlights, layered shadows, and expo-out micro-interactions. The Linear/Vercel/Raycast aesthetic.",
-      "category": "dark",
-      "mood": ["cinematic", "precise", "premium", "atmospheric", "technical"]
-    },
-    {
-      "name": "neo-brutalism",
-      "version": "1.0.0",
-      "description": "Digital punk rebellion against polished SaaS. Thick black borders. Hard ink shadows. Mechanical button press. Cream canvas. Space Grotesk Black. Loud, raw, confident.",
-      "category": "bold",
-      "mood": ["rebellious", "loud", "tactile", "energetic", "raw", "punk"]
-    }
-  ]
+  {
+    "name": "playful-geometric",
+    "version": "1.0.0",
+    "description": "Memphis-inspired. Hard pop shadows. Bouncy interactions. Confetti palette.",
+    "category": "light",
+    "mood": ["playful", "optimistic", "tactile"]
+  },
+  {
+    "name": "minimalist-monochrome",
+    "version": "1.0.0",
+    "description": "Editorial luxury design. Pure black and white only. Oversized Playfair Display serif. Hard section rules. Inversion as the only emphasis. No shadows, no radius, no color.",
+    "category": "light",
+    "mood": ["austere", "authoritative", "editorial", "timeless", "intellectual"]
+  },
+  {
+    "name": "linear-modern",
+    "version": "1.0.0",
+    "description": "Cinematic dark UI with ambient blob lighting, mouse-tracking spotlights, layered shadows, and expo-out micro-interactions. The Linear/Vercel/Raycast aesthetic.",
+    "category": "dark",
+    "mood": ["cinematic", "precise", "premium", "atmospheric", "technical"]
+  },
+  {
+    "name": "neo-brutalism",
+    "version": "1.0.0",
+    "description": "Digital punk rebellion against polished SaaS. Thick black borders. Hard ink shadows. Mechanical button press. Cream canvas. Space Grotesk Black. Loud, raw, confident.",
+    "category": "bold",
+    "mood": ["rebellious", "loud", "tactile", "energetic", "raw", "punk"]
+  },
+  {
+    "name": "hand-drawn",
+    "version": "1.0.0",
+    "description": "Authentic imperfection and human touch. Wobbly multi-value border-radius, hard zero-blur offset shadows, Kalam marker headings, Patrick Hand body, dot-grid paper texture, tape and tack decorations, and the press-flat button mechanic. Spontaneous, creative, playful.",
+    "category": "playful",
+    "mood": ["sketchy", "creative", "human", "approachable", "spontaneous", "playful"]
+  }
+]
