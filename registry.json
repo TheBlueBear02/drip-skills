@@ -1,12 +1,5 @@
 [
     {
-      "name": "retro-terminal",
-      "version": "1.0.0",
-      "description": "Phosphor green terminal aesthetic. CRT scanlines. Zero border radius.",
-      "category": "dark",
-      "mood": ["technical", "nostalgic", "raw"]
-    },
-    {
       "name": "playful-geometric",
       "version": "1.0.0",
       "description": "Memphis-inspired. Hard pop shadows. Bouncy interactions. Confetti palette.",
@@ -26,5 +19,12 @@
       "description": "Cinematic dark UI with ambient blob lighting, mouse-tracking spotlights, layered shadows, and expo-out micro-interactions. The Linear/Vercel/Raycast aesthetic.",
       "category": "dark",
       "mood": ["cinematic", "precise", "premium", "atmospheric", "technical"]
+    },
+    {
+      "name": "neo-brutalism",
+      "version": "1.0.0",
+      "description": "Digital punk rebellion against polished SaaS. Thick black borders. Hard ink shadows. Mechanical button press. Cream canvas. Space Grotesk Black. Loud, raw, confident.",
+      "category": "bold",
+      "mood": ["rebellious", "loud", "tactile", "energetic", "raw", "punk"]
     }
   ]
