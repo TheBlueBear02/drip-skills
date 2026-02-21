@@ -405,7 +405,7 @@ Table format:
 
 ---
 
-### tokens/charts.md (Optional)
+### tokens/charts.md 
 
 Use this file when the skill will be used for dashboards, analytics, or any
 UI that includes charts and graphs. It defines how charts look and behave
