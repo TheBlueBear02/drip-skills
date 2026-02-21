@@ -30,6 +30,7 @@ Read these files in order before generating anything:
 5. `tokens/borders.md`       ← Near-invisible borders. Layered radius.
 6. `tokens/motion.md`        ← Expo-out easing. 200-300ms. Precise.
 7. `tokens/spacing.md`       ← Asymmetric bento grids. Section rhythm.
+8. `tokens/charts.md`        ← Dashboards, Charts & graphs. Data colors, tooltips, motion.
 
 ### STEP 2 — Set up the project
 Follow `integration/setup.md` exactly. The background system requires
