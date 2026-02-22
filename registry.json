@@ -33,5 +33,12 @@
     "description": "Authentic imperfection and human touch. Wobbly multi-value border-radius, hard zero-blur offset shadows, Kalam marker headings, Patrick Hand body, dot-grid paper texture, tape and tack decorations, and the press-flat button mechanic. Spontaneous, creative, playful.",
     "category": "playful",
     "mood": ["sketchy", "creative", "human", "approachable", "spontaneous", "playful"]
+  },
+  {
+    "name": "art-deco",
+    "version": "1.0.0",
+    "description": "Opulence, mathematical precision, and architectural grandeur. Obsidian black with metallic gold, diagonal crosshatch texture, zero border-radius, Marcellus all-caps headings, rotated diamond icon containers, gold glows (never drop shadows), Roman numerals, and theatrical 500ms transitions. The Gatsby aesthetic.",
+    "category": "luxury",
+    "mood": ["opulent", "geometric", "theatrical", "timeless", "architectural", "exclusive"]
   }
 ]
