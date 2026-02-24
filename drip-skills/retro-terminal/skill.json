@@ -9,6 +9,7 @@
       "framer-motion": "^10.0.0"
     },
     "devDependencies": {},
+    "author": "getdrip",
     "components": 10,
     "tags": ["dark", "retro", "terminal", "crt", "monospace", "phosphor", "nostalgic", "technical"]
   }

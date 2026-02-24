@@ -10,6 +10,7 @@
     "lucide-react": "^0.263.0"
   },
   "devDependencies": {},
+  "author": "getdrip",
   "components": 15,
   "tags": ["light", "playful", "geometric", "memphis", "colorful", "bouncy", "pop-shadow"]
 }
