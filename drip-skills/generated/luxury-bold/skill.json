@@ -1,0 +1,17 @@
+{
+  "name": "luxury-bold",
+  "version": "1.0.0",
+  "description": "Bold minimalism meets sophistication with a focus on typography and structure.",
+  "category": "minimal",
+  "mood": ["bold", "minimalistic", "sophisticated"],
+  "stack": ["react", "tailwind", "framer-motion"],
+  "dependencies": {
+    "framer-motion": "^10.0.0"
+  },
+  "devDependencies": {},
+  "components": 15,
+  "tags": ["bold", "minimal", "luxury", "modern", "structured"]
+}
+```
+
+```
