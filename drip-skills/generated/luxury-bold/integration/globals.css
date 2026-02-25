@@ -1,0 +1,76 @@
+/* Luxury Bold — Global Styles */
+
+/* ── FONT IMPORT ──────── */
+/* Fonts are locally hosted within the project */
+
+/* ── CSS VARIABLES ──────── */
+:root {
+  --color-bg-primary: #1A1A1A;
+  --color-text-primary: #FFFFFF;
+  --color-accent-primary: #EFFF00;
+  --color-text-muted: #CCCCCC;
+  --color-border-primary: #FFFFFF;
+}
+
+/* ── BASE RESET ──────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* ── SELECTION ──────── */
+::selection {
+  background: var(--color-accent-primary);
+  color: var(--color-bg-primary);
+}
+
+/* ── FOCUS ──────── */
+:focus-visible {
+  outline: 1px dashed var(--color-accent-primary);
+}
+
+/* ── SCROLLBAR ──────── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent-primary);
+}
+
+/* ── LINKS ──────── */
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
+}
+
+a:hover {
+  color: var(--color-accent-primary);
+}
+
+/* ── SKILL-SPECIFIC GLOBALS ──────── */
+/* Additional unique styles */
+
+/* ── REDUCED MOTION ──────── */
+@media (prefers-reduced-motion) {
+  * {
+    transition: none !important;
+  }
+}
+
+/* ── UTILITY CLASSES ──────── */
+/* Carefully handcrafted classes relevant across the skill */
+```
+
+```
