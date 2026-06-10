@@ -1,4 +1,3 @@
-```jsx
 // LUXURY BOLD — Alert.jsx
 //
 // WHY THIS LOOKS THE WAY IT DOES:
@@ -44,4 +43,3 @@ export function Alert({ message, type = 'info' }) {
 // <Alert message="Success!" type="success" />
 // <Alert message="Warning! Take caution." type="warning" />
 // <Alert message="Error! Something went wrong." type="error" />
-```

@@ -1,4 +1,3 @@
-```jsx
 // LUXURY BOLD — LandingPage.jsx
 
 import React from 'react';
@@ -47,4 +46,3 @@ export default function LandingPage() {
     </div>
   );
 }
-```

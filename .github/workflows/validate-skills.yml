@@ -1,0 +1,46 @@
+name: Validate Skills
+
+on:
+  push:
+    paths:
+      - "drip-skills/**"
+      - "scripts/validate-skill.mjs"
+      - "registry.json"
+  pull_request:
+    paths:
+      - "drip-skills/**"
+      - "scripts/validate-skill.mjs"
+      - "registry.json"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate all skills
+        run: node scripts/validate-skill.mjs
+
+      - name: Verify registry covers production skills
+        run: |
+          node -e "
+          const fs = require('fs');
+          const path = require('path');
+          const registry = JSON.parse(fs.readFileSync('registry.json', 'utf8'));
+          const root = 'drip-skills';
+          const skills = fs.readdirSync(root, { withFileTypes: true })
+            .filter(d => d.isDirectory() && d.name !== 'generated')
+            .filter(d => fs.existsSync(path.join(root, d.name, 'SKILL.md')))
+            .map(d => d.name);
+          const registered = new Set(registry.map(r => r.name));
+          const missing = skills.filter(s => !registered.has(s));
+          if (missing.length) {
+            console.error('Registry missing skills:', missing.join(', '));
+            process.exit(1);
+          }
+          console.log('Registry covers all', skills.length, 'production skills.');
+          "

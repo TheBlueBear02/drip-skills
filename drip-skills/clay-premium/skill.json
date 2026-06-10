@@ -4,12 +4,35 @@
   "description": "High-Fidelity Claymorphism — soft matte silicone surfaces, candy-store colors, 4-layer shadow stacks, and bouncy micro-interactions. Zero sharp corners. Buttons squish. Cards float.",
   "category": "colorful",
   "mood": ["playful", "tactile", "joyful", "premium", "soft"],
-  "stack": ["react", "tailwind"],
+  "stack": ["react", "tailwind", "lucide-react"],
   "dependencies": {
     "lucide-react": "^0.263.0"
   },
   "devDependencies": {},
   "author": "getdrip",
-  "components": 11,
-  "tags": ["clay", "claymorphism", "playful", "colorful", "soft", "rounded", "3d-shadows", "candy", "joyful", "physical"]
+  "preview": "https://getdrip.dev/skills/clay-premium",
+  "docs": "https://getdrip.dev/docs/clay-premium",
+  "components": 7,
+  "tags": ["clay", "claymorphism", "playful", "colorful", "soft", "rounded", "3d-shadows", "candy", "joyful", "physical"],
+  "palette": {
+    "background": "#F4F1FA",
+    "foreground": "#2D2B32",
+    "muted": "#635F69",
+    "accent-pink": "#FF6B9D",
+    "accent-purple": "#9B59B6"
+  },
+  "fonts": {
+    "heading": "Nunito",
+    "body": "DM Sans"
+  },
+  "signature_traits": [
+    "4-layer shadow stacks on every convex surface",
+    "Minimum rounded-[20px] on all elements — never sharp corners",
+    "Button squish: active:scale-[0.92] + pressed shadow",
+    "Inputs recessed (inset shadow), buttons convex (outward shadow)",
+    "3-4 animated background blobs on every page",
+    "Lavender canvas #F4F1FA — never white or gray",
+    "Nunito Black headings + DM Sans body",
+    "Hover lift -translate-y-1 minimum on all interactive elements"
+  ]
 }

@@ -1,9 +1,18 @@
 ---
 name: botanical-organic
+description: >-
+  Applies organic botanical design with paper grain texture, arch imagery, serif italic
+  emphasis, and slow graceful motion on warm alabaster backgrounds. Use for wellness,
+  sustainable brands, editorial nature sites, or when the user mentions botanical-organic.
 version: 1.0.0
-stack: React + Tailwind CSS
-category: elegant
-mood: [organic, serene, artisanal, warm, sophisticated]
+metadata:
+  stack: React + Tailwind CSS
+  category: elegant
+  mood: [organic, serene, artisanal, warm, sophisticated, botanical]
+  signature_element: mandatory SVG paper grain overlay
+paths:
+  - "skills/botanical-organic/**"
+  - "**/skills/botanical-organic/**"
 ---
 
 # BOTANICAL ORGANIC SKILL
@@ -14,20 +23,29 @@ rigid hyper-digital sharpness in favor of warmth, tactility, and natural
 imperfection. Think botanical garden meets ceramics studio meets high-end
 editorial design. It whispers rather than shouts.
 
+Core principles live in `philosophy.md` under **Core Principles**.
+
 ---
 
 ## HOW TO USE THIS SKILL
 
-### STEP 1 — Read before you code
-Read these files in order. Do not skip ahead to components.
+### STEP 1 — Read intent before code
 
-1. `philosophy.md`            ← The organic manifesto. The WHY behind every decision.
+#### Tier A (always — read first)
+1. `philosophy.md`            ← The organic manifesto. Core Principles define every decision.
 2. `tokens/colors.md`         ← Earth-derived palette. No artificial brights. Ever.
-3. `tokens/typography.md`     ← Playfair Display + Source Sans 3. Italics as emphasis.
-4. `tokens/shadows.md`        ← Diffused, soft. The antithesis of hard shadows.
+3. `tokens/shadows.md`        ← Diffused, soft. The antithesis of hard shadows.
+
+#### Tier B (before full pages)
+4. `tokens/typography.md`     ← Playfair Display + Source Sans 3. Italics as emphasis.
 5. `tokens/borders.md`        ← Highly rounded. Arch imagery. Organic shapes.
 6. `tokens/motion.md`         ← Slow, graceful, honey-like. Nothing snaps.
 7. `tokens/spacing.md`        ← Generous whitespace. Breathing room is sacred.
+8. `integration/setup.md`     ← Paper grain texture and fonts must be wired first.
+
+#### Tier C (before new components)
+9. `components/`               ← WHY annotations on radius, shadow, and motion choices.
+10. `examples/LandingPage.jsx`  ← North star — arch images, staggered grid, italic headlines.
 
 ### STEP 2 — Integration
 Follow `integration/setup.md`. The paper grain texture and font imports must
@@ -43,26 +61,7 @@ transitions are the signature — miss any one and the design reads as generic.
 Every component file contains WHY annotations explaining the radius choices,
 shadow decisions, and animation curves. Read before copying.
 
----
-
-## THE THREE LAWS
-
-### Law 1: Texture is mandatory
-The SVG paper grain overlay at `opacity-[0.015]` fixed to the viewport is
-non-negotiable. Without it, the design is flat, cold, and digital.
-With it, the design is warm, tactile, and alive. This single element is
-the most important thing in the entire system.
-
-### Law 2: Everything is rounded or flowing
-`rounded-3xl` on cards. `rounded-full` on buttons and avatars.
-Arch borders (`rounded-t-[200px]`) on hero images.
-There are no hard rectangular shapes in nature — there are none here either.
-Sharp corners are reserved only for deliberate, rare structural moments.
-
-### Law 3: Motion is slow and graceful
-`duration-500` minimum for transitions. `duration-700` for images.
-`ease-out` always. Nothing in a botanical garden moves quickly or snaps.
-Fast animations (under 300ms) break the organic feel entirely.
+For extrapolation tests, see `meta/quality-prompts.md`.
 
 ---
 
@@ -82,6 +81,20 @@ Fast animations (under 300ms) break the organic feel entirely.
 - **Italic emphasis in headlines**: Single italic words inside Playfair headings are signature.
 - **Thin icon strokes**: `stroke-width={1.5}` always. Never bold icons.
 - **Soft diffused shadows**: Never use hard, dark, or offset shadows.
+
+---
+
+## AGENT BEHAVIOR RULES
+- Every page includes the fixed SVG paper grain overlay at opacity ~0.015 — check first.
+- Cards use `rounded-3xl` and green-tinted diffused shadows — never hard offset shadows.
+- Hero images use arch border-radius (`rounded-t-[200px]`) — never sharp rectangles.
+- Headlines use Playfair Display with one italic emphasis word — never all-regular weight.
+- Hover transitions are minimum 500ms ease-out — never snappy or bouncy motion.
+- Interactive hovers use terracotta `#C27B66` — never saturated artificial brights.
+- Grids use staggered vertical offset on alternating cards — never perfectly flat rows.
+- Icons use Lucide at strokeWidth 1.5 — thin and elegant, never chunky.
+- Background is warm alabaster `#F9F8F4` — never pure white `#FFFFFF`.
+- New components must pass the extrapolation test in `meta/quality-prompts.md`.
 
 ---
 

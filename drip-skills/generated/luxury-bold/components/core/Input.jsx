@@ -1,4 +1,3 @@
-```jsx
 // LUXURY BOLD — Input.jsx
 //
 // WHY THIS LOOKS THE WAY IT DOES:
@@ -41,4 +40,3 @@ export function Input({ placeholder, value, onChange }) {
 //
 // <Input placeholder="Enter text" />
 // <Input value="Pre-filled" onChange={handleChange} />
-```

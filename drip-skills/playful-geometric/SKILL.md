@@ -1,9 +1,19 @@
 ---
 name: playful-geometric
+description: >-
+  Applies Memphis-inspired design with hard pop shadows, bouncy interactions, and a
+  confetti color palette on warm cream backgrounds. Use when building playful marketing
+  sites, landing pages, or when the user mentions playful-geometric, Memphis design,
+  or pop shadows.
 version: 1.0.0
-stack: React + Tailwind CSS + Framer Motion + Lucide React
-category: light / expressive
-mood: friendly, tactile, optimistic, energetic
+metadata:
+  stack: React + Tailwind CSS + Framer Motion + Lucide React
+  category: light
+  mood: [playful, optimistic, tactile, energetic]
+  signature_element: hard 4px pop shadows on warm cream
+paths:
+  - "skills/playful-geometric/**"
+  - "**/skills/playful-geometric/**"
 ---
 
 # PLAYFUL GEOMETRIC SKILL
@@ -21,15 +31,22 @@ connection through optimism, clarity, and tactile fun.
 ## HOW TO USE THIS SKILL
 
 ### STEP 1 — Read intent before code
-Read these files in order before generating anything:
 
+#### Tier A (always — read first)
 1. `philosophy.md`           ← The soul. Read this first, always.
 2. `tokens/colors.md`        ← The confetti palette. Every color has a role.
-3. `tokens/typography.md`    ← Two fonts. Precise hierarchy rules.
-4. `tokens/shadows.md`       ← The "pop" shadow system. Central to the aesthetic.
+3. `tokens/shadows.md`       ← The "pop" shadow system. Central to the aesthetic.
+
+#### Tier B (before full pages)
+4. `tokens/typography.md`    ← Two fonts. Precise hierarchy rules.
 5. `tokens/borders.md`       ← Chunky 2px borders. Radius variety is intentional.
 6. `tokens/motion.md`        ← Bouncy, elastic, fun. No linear easing.
 7. `tokens/spacing.md`       ← Generous spacing filled with decoration.
+8. `integration/setup.md`    ← Wire Tailwind and globals before any components.
+
+#### Tier C (before new components)
+9. `components/`              ← Annotated references with WHY comments.
+10. `examples/LandingPage.jsx` ← North star quality benchmark.
 
 ### STEP 2 — Set up the project
 Follow `integration/setup.md` exactly. Wire in the Tailwind config and globals.css
@@ -44,6 +61,8 @@ hard shadow, chunky border, bounce on hover, shaped decoration nearby.
 Read `examples/LandingPage.jsx` before generating any full page.
 Every page you build should feel like it belongs in the same world:
 warm cream background, confetti shapes, hard shadows, bouncy interactions.
+
+For extrapolation tests, see `meta/quality-prompts.md`.
 
 ---
 

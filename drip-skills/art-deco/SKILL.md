@@ -1,9 +1,18 @@
 ---
 name: art-deco
+description: >-
+  Applies Art Deco luxury UI with obsidian black, gold glows, zero border-radius, and
+  theatrical all-caps typography (The Gatsby aesthetic). Use for premium brands, cultural
+  institutions, luxury services, or when the user mentions art-deco or Gatsby design.
 version: 1.0.0
-stack: React + Tailwind CSS
-category: luxury
-mood: [opulent, geometric, theatrical, timeless, architectural]
+metadata:
+  stack: React + Tailwind CSS
+  category: luxury
+  mood: [opulent, geometric, theatrical, timeless, architectural, exclusive]
+  signature_element: gold glows on crosshatch obsidian backgrounds
+paths:
+  - "skills/art-deco/**"
+  - "**/skills/art-deco/**"
 ---
 
 # ART DECO SKILL — THE GATSBY AESTHETIC
@@ -19,20 +28,29 @@ yet precisely placed. Not for soft SaaS startups — for luxury brands,
 premium services, cultural institutions, and products that want to feel
 like heirlooms.
 
+Core principles live in `philosophy.md` under **Core Principles**.
+
 ---
 
 ## HOW TO USE THIS SKILL
 
-### STEP 1 — Read before you code
-Read these files in order. Philosophy first.
+### STEP 1 — Read intent before code
 
-1. `philosophy.md`          ← The Gatsby manifesto. Geometry, contrast, theatricality.
+#### Tier A (always — read first)
+1. `philosophy.md`          ← The Gatsby manifesto. Core Principles define every decision.
 2. `tokens/colors.md`       ← Obsidian black, champagne cream, metallic gold. Nothing else.
-3. `tokens/typography.md`   ← Marcellus headings, Josefin Sans body. ALL-CAPS always.
-4. `tokens/borders.md`      ← 0px radius. Double frames. Corner embellishments.
-5. `tokens/shadows.md`      ← Glows not shadows. Gold halos. No soft drops.
+3. `tokens/shadows.md`      ← Glows not shadows. Gold halos. No soft drops.
+
+#### Tier B (before full pages)
+4. `tokens/typography.md`   ← Marcellus headings, Josefin Sans body. ALL-CAPS always.
+5. `tokens/borders.md`      ← 0px radius. Double frames. Corner embellishments.
 6. `tokens/motion.md`       ← Theatrical, mechanical. 300–500ms. Elevator doors.
 7. `tokens/spacing.md`      ← py-32 sections. Symmetry. Verticality. Stage presence.
+8. `integration/setup.md`   ← Fonts, crosshatch texture, CSS variables first.
+
+#### Tier C (before new components)
+9. `components/`             ← WHY annotations on every reference component.
+10. `examples/LandingPage.jsx` ← North star — crosshatch, sunburst, diamond icons.
 
 ### STEP 2 — Integration
 Follow `integration/setup.md`. Font imports, crosshatch background texture,
@@ -47,28 +65,7 @@ L-brackets, stepped dividers, Roman numerals — all must be present.
 ### STEP 4 — Build components
 Every component file has WHY annotations. Read them before copying.
 
----
-
-## THE THREE LAWS
-
-### Law 1: Zero border-radius. Everywhere.
-`border-radius: 0` on every container, button, card, and input. No exceptions.
-The only softness permitted is `2px` in rare functional contexts.
-Art Deco geometry demands sharp angles. A rounded corner breaks the entire
-architectural metaphor. Even `rounded-sm` (4px) is forbidden.
-
-### Law 2: Gold glows, never drop-shadows.
-`box-shadow: 0 0 15px rgba(212,175,55,0.2)` — not `drop-shadow(4px 4px 8px rgba(0,0,0,0.5))`.
-This simulates 1920s neon and backlit signage. On hover it intensifies:
-`0 0 25px rgba(212,175,55,0.4)`. Hard drop shadows are modern and digital.
-Glows are theatrical and vintage. Never use Tailwind's built-in `shadow-*`.
-
-### Law 3: All-caps typography with extreme tracking.
-Every heading: uppercase, `letter-spacing: 0.2em` minimum.
-Marcellus for display. Josefin Sans for body.
-No lowercase headings. No tight tracking on display text.
-The scale contrast is extreme — hero text at 72–96px, body at 18px.
-The drama is the point.
+For extrapolation tests, see `meta/quality-prompts.md`.
 
 ---
 
@@ -87,6 +84,20 @@ The drama is the point.
 - **All-caps headings**: Case is a design decision here. Never sentence case.
 - **Crosshatch background texture**: Must always be present. Dead without it.
 - **0px border-radius**: If you add rounding, the skill reads as generic dark UI.
+
+---
+
+## AGENT BEHAVIOR RULES
+- Every container uses `border-radius: 0` — never Tailwind rounded utilities on visible elements.
+- Shadows are gold glows only: `0 0 15px rgba(212,175,55,0.2)` — never drop-shadow or blur stacks.
+- All headings are UPPERCASE with `letter-spacing: 0.2em` minimum in Marcellus.
+- Every section needs crosshatch or sunburst texture — flat black backgrounds are wrong.
+- Cards get corner L-brackets and gold border hover intensification — not generic dark cards.
+- Icon containers use rotated diamond frames — never plain circular icons.
+- Section headings are flanked by gold gradient divider lines — symmetry is mandatory.
+- Hover lifts use `translateY(-8px)` at 500ms ease-out — theatrical, not snappy.
+- Lucide icons always use `strokeWidth={1}` — thin and architectural.
+- New components must pass the extrapolation test in `meta/quality-prompts.md`.
 
 ---
 

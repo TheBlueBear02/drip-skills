@@ -1,4 +1,3 @@
-```jsx
 // LUXURY BOLD — Button.jsx
 //
 // WHY THIS LOOKS THE WAY IT DOES:
@@ -42,4 +41,3 @@ export function Button({ children, onClick, type = 'button', variant = 'primary'
 // <Button onClick={handleClick}>Click Me</Button>
 // <Button type="submit">Submit</Button>
 // <Button variant="secondary">Learn More</Button>
-```

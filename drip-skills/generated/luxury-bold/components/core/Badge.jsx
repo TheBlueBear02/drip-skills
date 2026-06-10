@@ -1,4 +1,3 @@
-```jsx
 // LUXURY BOLD — Badge.jsx
 //
 // WHY THIS LOOKS THE WAY IT DOES:
@@ -26,4 +25,3 @@ export function Badge({ text, variant = 'primary' }) {
 // <Badge text="New" />
 // <Badge text="Featured" />
 // <Badge text="Limited Edition" />
-```

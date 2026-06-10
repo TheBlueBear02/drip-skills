@@ -14,6 +14,30 @@ That is this skill.
 
 ---
 
+## Core Principles
+
+These three principles define every visual decision in this skill. They are
+non-negotiable — breaking any one produces generic rounded UI instead of hand-drawn character.
+
+### Principle 1: No straight lines
+Every border, shape, and container uses irregular multi-value border-radius.
+Never `rounded-lg`. Never `rounded-md`. Always custom multi-value syntax:
+`border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px`
+There are dozens of variations. No two containers should look exactly the same.
+
+### Principle 2: Hard offset shadows, zero blur
+`box-shadow: 4px 4px 0px 0px #2d2d2d`
+Never soft, never blurred. The offset is the point — it simulates a cut-paper
+layered collage. Hover reduces offset (2px → 6px "lift"). Active kills it
+entirely (button "presses flat"). No shadow blur radius ever.
+
+### Principle 3: Handwritten fonts everywhere
+Kalam for headings (thick marker energy). Patrick Hand for body (legible but human).
+Never system fonts. Never Inter, Roboto, or any geometric sans. If it looks like
+it could be on a tech company's pitch deck, it's wrong for this system.
+
+---
+
 ## Why This Aesthetic Exists
 
 This is a rejection of the polished, optimized, A/B-tested interface.

@@ -14,6 +14,32 @@ That is this skill.
 
 ---
 
+## Core Principles
+
+These three principles define every visual decision in this skill. They are
+non-negotiable — breaking any one produces generic dark UI instead of Art Deco.
+
+### Principle 1: Zero border-radius. Everywhere.
+`border-radius: 0` on every container, button, card, and input. No exceptions.
+The only softness permitted is `2px` in rare functional contexts.
+Art Deco geometry demands sharp angles. A rounded corner breaks the entire
+architectural metaphor. Even `rounded-sm` (4px) is forbidden.
+
+### Principle 2: Gold glows, never drop-shadows.
+`box-shadow: 0 0 15px rgba(212,175,55,0.2)` — not `drop-shadow(4px 4px 8px rgba(0,0,0,0.5))`.
+This simulates 1920s neon and backlit signage. On hover it intensifies:
+`0 0 25px rgba(212,175,55,0.4)`. Hard drop shadows are modern and digital.
+Glows are theatrical and vintage. Never use Tailwind's built-in `shadow-*`.
+
+### Principle 3: All-caps typography with extreme tracking.
+Every heading: uppercase, `letter-spacing: 0.2em` minimum.
+Marcellus for display. Josefin Sans for body.
+No lowercase headings. No tight tracking on display text.
+The scale contrast is extreme — hero text at 72–96px, body at 18px.
+The drama is the point.
+
+---
+
 ## Why This Aesthetic Exists
 
 This is a rejection of anonymous modernism. Against:

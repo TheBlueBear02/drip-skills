@@ -1,17 +1,31 @@
 {
   "name": "luxury-bold",
-  "version": "1.0.0",
-  "description": "Bold minimalism meets sophistication with a focus on typography and structure.",
+  "version": "0.1.0",
+  "description": "Bold minimalism with architectural typography and neon yellow accent on monochrome surfaces. WIP — not in registry.",
   "category": "minimal",
-  "mood": ["bold", "minimalistic", "sophisticated"],
+  "mood": ["bold", "minimalistic", "sophisticated", "contemporary", "structured"],
   "stack": ["react", "tailwind", "framer-motion"],
   "dependencies": {
     "framer-motion": "^10.0.0"
   },
   "devDependencies": {},
-  "components": 15,
-  "tags": ["bold", "minimal", "luxury", "modern", "structured"]
+  "author": "getdrip",
+  "status": "wip",
+  "components": 7,
+  "tags": ["bold", "minimal", "luxury", "modern", "structured", "wip", "generated"],
+  "palette": {
+    "background": "#1A1A1A",
+    "foreground": "#FFFFFF",
+    "accent": "#EFFF00",
+    "muted": "#888888"
+  },
+  "signature_traits": [
+    "Zero border-radius everywhere",
+    "Neon yellow #EFFF00 accent on dark #1A1A1A surfaces",
+    "Bold uppercase sans-serif headlines at dramatic scale",
+    "No shadows — flat contrast only",
+    "Strict 12-column grid alignment",
+    "Grayscale imagery only",
+    "200ms ease-out transitions maximum"
+  ]
 }
-```
-
-```

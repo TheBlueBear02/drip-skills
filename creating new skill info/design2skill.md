@@ -93,10 +93,18 @@ A weak SKILL.md means the skill will be applied inconsistently.
 ```md
 ---
 name: skill-name
+description: >-
+  Applies [WHAT the skill does]. Use when [WHEN triggers — user mentions X,
+  building Y, or working on Z]. Third person. Include searchable keywords.
 version: 1.0.0
-stack: React + Tailwind CSS + Framer Motion
-category: dark | light | colorful | minimal | expressive
-mood: [3-5 adjectives describing the feeling]
+metadata:
+  stack: React + Tailwind CSS + Framer Motion
+  category: dark | light | colorful | minimal | expressive | luxury | bold | elegant | playful
+  mood: [adjective1, adjective2, adjective3]
+  signature_element: the one defining visual trait
+paths:
+  - "skills/skill-name/**"
+  - "**/skills/skill-name/**"
 ---
 
 # SKILL NAME IN CAPS
@@ -105,19 +113,23 @@ One paragraph describing the design world. What does it reference?
 What emotional response does it create? What problem does it solve
 for someone who was stuck with generic AI UIs?
 
+Core principles for skills with 3 defining laws live in `philosophy.md`
+under **Core Principles** — not as a separate "Three Laws" section in SKILL.md.
+
 ---
 
 ## HOW TO USE THIS SKILL
 
 ### STEP 1 — Read intent before code
-Read these files in order before generating anything:
-1. philosophy.md
-2. tokens/colors.md
-3. tokens/typography.md
-4. tokens/shadows.md   (or whichever token is most defining for this skill)
-5. tokens/borders.md
-6. tokens/motion.md
-7. tokens/spacing.md
+
+#### Tier A (always — read first)
+[philosophy.md + 2 most defining token files]
+
+#### Tier B (before full pages)
+[remaining tokens + integration/setup.md]
+
+#### Tier C (before new components)
+[components/ + examples/LandingPage.jsx]
 
 ### STEP 2 — Set up the project
 Follow integration/setup.md exactly.
@@ -127,6 +139,8 @@ Follow integration/setup.md exactly.
 
 ### STEP 4 — Use examples as your quality benchmark
 [Direct agent to examples/LandingPage.jsx]
+
+For extrapolation tests, see meta/quality-prompts.md.
 
 ---
 
@@ -140,8 +154,8 @@ Follow integration/setup.md exactly.
 ---
 
 ## AGENT BEHAVIOR RULES
-[5-8 specific rules the agent must follow when building new components]
-[These catch the common ways agents drift from the aesthetic]
+[8-10 specific, testable rules the agent must follow when building new components]
+[Use AGENT BEHAVIOR RULES as the canonical section — not "THE THREE LAWS"]
 
 ---
 
@@ -205,10 +219,23 @@ Machine-readable file the CLI reads. Required for `npx drip add` to work.
     "framer-motion": "^10.0.0"
   },
   "devDependencies": {},
-  "components": 15,
-  "tags": ["tag1", "tag2", "tag3", "tag4", "tag5"]
+  "components": 7,
+  "tags": ["tag1", "tag2", "tag3", "tag4", "tag5"],
+  "palette": {
+    "background": "#hex",
+    "foreground": "#hex",
+    "accent": "#hex"
+  },
+  "signature_traits": [
+    "Measurable trait 1 — include hex/px/ms values",
+    "Measurable trait 2",
+    "Measurable trait 3"
+  ]
 }
 ```
+
+Also add `meta/quality-prompts.md` with 3 extrapolation test prompts per skill.
+Run `node scripts/validate-skill.mjs` before publishing.
 
 ---
 
@@ -906,7 +933,8 @@ reflect what you actually learned building the skill, not what
 you predicted before building it.
 
 ### Phase 6 — Quality Check
-Run all 5 laws from Part 4.
+Run all 5 laws from Part 4 (see `quality-tests.md` for full procedure).
+Run `node scripts/validate-skill.mjs drip-skills/skill-name` for structural compliance.
 Fix anything that fails before publishing.
 
 ---

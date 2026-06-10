@@ -30,6 +30,30 @@ Shadows are not lighting simulation — they are physical presence on a surface.
 
 ---
 
+## Core Principles
+
+These three principles define every visual decision in this skill. They are
+non-negotiable — breaking any one produces generic SaaS UI instead of neo-brutalism.
+
+### Principle 1: Everything has a border
+`border-4 border-black` is the default. Always. Cards, buttons, inputs,
+nav items, badges, containers — if it's visible, it has a border.
+An element without a border is invisible in this world.
+
+### Principle 2: Shadows are solid ink
+No blur. No spread. No soft diffusion. Shadows in this system are hard
+rectangles offset at 45 degrees: `box-shadow: 8px 8px 0px 0px #000`.
+They simulate physical layering — one piece of paper on top of another.
+Remove the blur, you get brutalism. Add blur, you get corporate SaaS.
+
+### Principle 3: Interactions are mechanical
+Buttons CLICK DOWN (translate to cover their shadow on active).
+Cards LIFT UP (translate upward + shadow grows on hover).
+Transitions are FAST (100–200ms). Easing is LINEAR or EASE-OUT.
+Never ease-in-out. Never slow. Never soft.
+
+---
+
 ## The Physics of This World
 
 Everything in this interface obeys a consistent set of physical rules.

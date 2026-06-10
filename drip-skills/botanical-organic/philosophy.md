@@ -14,6 +14,30 @@ That is this skill.
 
 ---
 
+## Core Principles
+
+These three principles define every visual decision in this skill. They are
+non-negotiable — breaking any one produces flat digital UI instead of botanical warmth.
+
+### Principle 1: Texture is mandatory
+The SVG paper grain overlay at `opacity-[0.015]` fixed to the viewport is
+non-negotiable. Without it, the design is flat, cold, and digital.
+With it, the design is warm, tactile, and alive. This single element is
+the most important thing in the entire system.
+
+### Principle 2: Everything is rounded or flowing
+`rounded-3xl` on cards. `rounded-full` on buttons and avatars.
+Arch borders (`rounded-t-[200px]`) on hero images.
+There are no hard rectangular shapes in nature — there are none here either.
+Sharp corners are reserved only for deliberate, rare structural moments.
+
+### Principle 3: Motion is slow and graceful
+`duration-500` minimum for transitions. `duration-700` for images.
+`ease-out` always. Nothing in a botanical garden moves quickly or snaps.
+Fast animations (under 300ms) break the organic feel entirely.
+
+---
+
 ## Why This Aesthetic Exists
 
 This is a reaction against sterile, clinical tech design. Against:

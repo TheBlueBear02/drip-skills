@@ -1,9 +1,18 @@
 ---
 name: retro-terminal
+description: >-
+  Applies CRT terminal aesthetic with phosphor green glow, monospace grid, scanline
+  overlays, and typewriter motion. Use for developer tools, retro games, CLI-inspired
+  UIs, or when the user mentions retro-terminal, CRT, or phosphor green.
 version: 1.0.0
-stack: React + Tailwind CSS + Framer Motion
-category: dark / aesthetic
-mood: raw, technical, nostalgic, precise
+metadata:
+  stack: React + Tailwind CSS + Framer Motion
+  category: dark
+  mood: [raw, technical, nostalgic, precise]
+  signature_element: phosphor green glow on void black with scanlines
+paths:
+  - "skills/retro-terminal/**"
+  - "**/skills/retro-terminal/**"
 ---
 
 # RETRO-TERMINAL SKILL
@@ -20,15 +29,22 @@ This is not a costume. It is a complete, coherent visual language.
 ## HOW TO USE THIS SKILL
 
 ### STEP 1 — Read intent before code
-Read these files in order before generating anything:
 
+#### Tier A (always — read first)
 1. `philosophy.md`           ← The soul. Read this first, always.
 2. `tokens/colors.md`        ← The palette. Every color has a rule.
 3. `tokens/typography.md`    ← One font family. Many precise rules.
+
+#### Tier B (before full pages)
 4. `tokens/motion.md`        ← Animation is character, not decoration.
 5. `tokens/spacing.md`       ← Grid-based. Do not deviate.
 6. `tokens/borders.md`       ← Borders define structure here.
 7. `tokens/shadows.md`       ← Glow, not shadow. Understand the difference.
+8. `integration/setup.md`    ← CRT effects, scanlines, and CSS variables first.
+
+#### Tier C (before new components)
+9. `components/`              ← Annotated references with WHY comments.
+10. `examples/LandingPage.jsx` ← North star terminal benchmark.
 
 ### STEP 2 — Set up the project
 Follow `integration/setup.md` exactly. Wire in the Tailwind config and globals.css
@@ -43,6 +59,8 @@ When building components not in this library, apply the same logic.
 Read `examples/LandingPage.jsx` before generating any full page.
 This is what the skill looks like when everything works together.
 Every page you build should feel like it belongs in the same world.
+
+For extrapolation tests, see `meta/quality-prompts.md`.
 
 ---
 
@@ -76,6 +94,11 @@ Every page you build should feel like it belongs in the same world.
 - When in doubt, add a border. When very much in doubt, add a glow.
 - All interactive elements must have a hover state. Terminals respond.
 - Cursor is always `cursor-none` on elements where the custom cursor is active.
+- Border-radius is always 0px — never rounded corners on any element.
+- Text uses phosphor color with glow — never pure white or gray text.
+- At least one blinking cursor or typewriter element exists on every primary screen.
+- Labels and status codes are UPPERCASE monospace with wide letter-spacing.
+- New components must pass the extrapolation test in `meta/quality-prompts.md`.
 
 ---
 

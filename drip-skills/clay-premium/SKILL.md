@@ -1,9 +1,18 @@
 ---
 name: clay-premium
+description: >-
+  Applies high-fidelity claymorphism with 4-layer shadow stacks, super-rounded corners,
+  animated blobs, and squish press interactions. Use for playful SaaS, candy-store UIs,
+  or when the user mentions clay-premium, claymorphism, or soft 3D surfaces.
 version: 1.0.0
-stack: React + Tailwind CSS
-category: colorful
-mood: [playful, tactile, joyful, premium, soft]
+metadata:
+  stack: React + Tailwind CSS
+  category: colorful
+  mood: [playful, tactile, joyful, premium, soft]
+  signature_element: 4-layer convex/concave shadow stacks
+paths:
+  - "skills/clay-premium/**"
+  - "**/skills/clay-premium/**"
 ---
 
 # CLAY PREMIUM SKILL
@@ -22,16 +31,23 @@ blobs drift in zero-gravity, and buttons physically squish when pressed.
 ## HOW TO USE THIS SKILL
 
 ### STEP 1 — Read intent before code
-Read these files in order before generating anything:
 
+#### Tier A (always — read first)
 1. `philosophy.md`           ← The clay physics engine. Read first, always.
 2. `tokens/colors.md`        ← Candy shop palette. Every value deliberate.
 3. `tokens/shadows.md`       ← THE most important token file. 4-layer stacks.
+
+#### Tier B (before full pages)
 4. `tokens/typography.md`    ← Nunito Black + DM Sans. Non-negotiable pairing.
 5. `tokens/borders.md`       ← Super-rounded everywhere. Min 20px. No exceptions.
 6. `tokens/motion.md`        ← Float, breathe, squish. The clay physics in CSS.
 7. `tokens/spacing.md`       ← Generous, airy. Cards breathe.
-8. `tokens/charts.md`        ← Charts & graphs. Data colors, container, tooltips, motion. Read when styling or adding dashboards and charts.
+8. `tokens/charts.md`        ← Charts and dashboards styling rules.
+9. `integration/setup.md`    ← Shadow utilities and blob keyframes first.
+
+#### Tier C (before new components)
+10. `components/`             ← WHY annotations on shadow stacks and physics.
+11. `examples/LandingPage.jsx` ← North star — blobs, bento grid, button squish.
 
 ### STEP 2 — Set up the project
 Follow `integration/setup.md` exactly. The shadow utilities and blob animation
@@ -45,6 +61,8 @@ the border radius decisions, and the interaction physics. Study before building.
 Read `examples/LandingPage.jsx` before building any page. The 4-layer
 background blob system, bento grid, and button squish effects are the
 signature elements — missing any one makes the design look amateur.
+
+For extrapolation tests, see `meta/quality-prompts.md`.
 
 ---
 

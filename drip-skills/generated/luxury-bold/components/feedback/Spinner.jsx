@@ -1,4 +1,3 @@
-```jsx
 // LUXURY BOLD — Spinner.jsx
 //
 // WHY THIS LOOKS THE WAY IT DOES:
@@ -35,4 +34,3 @@ document.head.appendChild(globalStyles);
 // ── USAGE EXAMPLES ────────────────────────────────────────────────────────────
 //
 // <Spinner />
-```

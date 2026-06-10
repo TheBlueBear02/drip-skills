@@ -1,9 +1,18 @@
 ---
 name: hand-drawn
+description: >-
+  Applies hand-drawn sketch aesthetic with wobbly multi-value border-radius, hard
+  zero-blur offset shadows, and handwritten fonts on dot-grid paper. Use for creative
+  portfolios, playful apps, or when the user mentions hand-drawn, sketch UI, or doodle design.
 version: 1.0.0
-stack: React + Tailwind CSS
-category: playful
-mood: [sketchy, creative, human, approachable, spontaneous]
+metadata:
+  stack: React + Tailwind CSS
+  category: playful
+  mood: [sketchy, creative, human, approachable, spontaneous, playful]
+  signature_element: wobbly border-radius with hard offset shadows
+paths:
+  - "skills/hand-drawn/**"
+  - "**/skills/hand-drawn/**"
 ---
 
 # HAND-DRAWN SKILL
@@ -14,20 +23,29 @@ irregularity — sticky notes on a wall, napkin diagrams, sketches on
 notebook paper. It celebrates messiness as honesty. Every line is wobbly.
 Every shadow is hard. Every font is handwritten.
 
+Core principles live in `philosophy.md` under **Core Principles**.
+
 ---
 
 ## HOW TO USE THIS SKILL
 
-### STEP 1 — Read before you code
-Read these files in order. Do not skip to components.
+### STEP 1 — Read intent before code
 
-1. `philosophy.md`          ← Why wobbly. Why hard shadows. The full manifesto.
+#### Tier A (always — read first)
+1. `philosophy.md`          ← Why wobbly. Why hard shadows. Core Principles.
 2. `tokens/colors.md`       ← 4 colors only. Pencil, paper, red marker, blue pen.
-3. `tokens/typography.md`   ← Kalam + Patrick Hand. Scale dramatically for notes.
-4. `tokens/borders.md`      ← CRITICAL. The wobbly border-radius technique.
+3. `tokens/borders.md`      ← CRITICAL. The wobbly border-radius technique.
+
+#### Tier B (before full pages)
+4. `tokens/typography.md`   ← Kalam + Patrick Hand. Scale dramatically for notes.
 5. `tokens/shadows.md`      ← Hard offset, zero blur. Never soft shadows.
 6. `tokens/motion.md`       ← Snappy 100ms. Rotation jiggle. Button press-flat.
 7. `tokens/spacing.md`      ← py-20 sections. Generous gaps. Contained sketchbook.
+8. `integration/setup.md`   ← Fonts, dot-grid background, wobbly radius config.
+
+#### Tier C (before new components)
+9. `components/`             ← WHY annotations on every reference component.
+10. `examples/LandingPage.jsx` ← North star — wobbly borders, tape, press-flat buttons.
 
 ### STEP 2 — Integration
 Follow `integration/setup.md`. Font imports, dot-grid background, and the
@@ -40,28 +58,9 @@ The wobbly borders, hard shadows, button press-flat mechanic, tape
 decorations, SVG squiggles, and rotation jiggle are all required.
 
 ### STEP 4 — Build components
-Every component file includes WHY annotations. Read them.
+Every component file includes WHY annotations. Read them before copying.
 
----
-
-## THE THREE LAWS
-
-### Law 1: No straight lines
-Every border, shape, and container uses irregular multi-value border-radius.
-Never `rounded-lg`. Never `rounded-md`. Always custom multi-value syntax:
-`border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px`
-There are dozens of variations. No two containers should look exactly the same.
-
-### Law 2: Hard offset shadows, zero blur
-`box-shadow: 4px 4px 0px 0px #2d2d2d`
-Never soft, never blurred. The offset is the point — it simulates a cut-paper
-layered collage. Hover reduces offset (2px → 6px "lift"). Active kills it
-entirely (button "presses flat"). No shadow blur radius ever.
-
-### Law 3: Handwritten fonts everywhere
-Kalam for headings (thick marker energy). Patrick Hand for body (legible but human).
-Never system fonts. Never Inter, Roboto, or any geometric sans. If it looks like
-it could be on a tech company's pitch deck, it's wrong for this system.
+For extrapolation tests, see `meta/quality-prompts.md`.
 
 ---
 
@@ -81,6 +80,20 @@ it could be on a tech company's pitch deck, it's wrong for this system.
 - **Background #fdfbf7**: Never pure white. The warm paper color is essential.
 - **Dashed borders on secondary elements**: Solid primary, dashed secondary — always.
 - **Rotation on decorative elements**: Things tilted at rest feel hand-placed.
+
+---
+
+## AGENT BEHAVIOR RULES
+- Every container uses irregular multi-value `border-radius` — never `rounded-lg` or `rounded-md`.
+- Shadows are always hard offset `4px 4px 0px 0px #2d2d2d` — zero blur radius ever.
+- All text uses Kalam (headings) or Patrick Hand (body) — never system or geometric sans fonts.
+- Buttons implement press-flat: hover reduces shadow, active kills shadow and translates fully.
+- Dot-grid paper texture appears on every section background — flat white is wrong.
+- Decorative elements (tape, tacks, squiggles) rotate ±1–3deg at rest — never perfectly aligned.
+- Secondary UI elements use dashed borders; primary elements use solid pencil-stroke borders.
+- Motion is snappy at 100ms linear — never slow ease-in-out on interactions.
+- Post-it yellow `#fff9c4` is reserved for highlight cards — not the default surface.
+- New components must pass the extrapolation test in `meta/quality-prompts.md`.
 
 ---
 

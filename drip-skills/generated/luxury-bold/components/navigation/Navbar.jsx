@@ -1,4 +1,3 @@
-```jsx
 // LUXURY BOLD — Navbar.jsx
 //
 // WHY THIS LOOKS THE WAY IT DOES:
@@ -57,4 +56,3 @@ export function Navbar() {
 // ── USAGE EXAMPLES ────────────────────────────────────────────────────────────
 //
 // <Navbar />
-```

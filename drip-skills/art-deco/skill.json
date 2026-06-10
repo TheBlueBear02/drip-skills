@@ -29,6 +29,7 @@
     "heading": "Marcellus",
     "body":    "Josefin Sans"
   },
+  "components": 7,
   "signature_traits": [
     "border-radius: 0px everywhere — no exceptions",
     "Gold glows: 0 0 Xpx rgba(212,175,55,Y) — never drop shadows",

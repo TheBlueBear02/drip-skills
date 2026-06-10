@@ -1,9 +1,18 @@
 ---
 name: minimalist-monochrome
+description: >-
+  Applies editorial black-and-white design with oversized serif typography, hard section
+  rules, and inversion-only emphasis. Use for luxury editorial sites, fashion portfolios,
+  architectural monographs, or when the user mentions minimalist-monochrome.
 version: 1.0.0
-stack: React + Tailwind CSS
-category: light / editorial
-mood: austere, authoritative, timeless, editorial, intellectual
+metadata:
+  stack: React + Tailwind CSS
+  category: light
+  mood: [austere, authoritative, editorial, timeless, intellectual]
+  signature_element: pure black-white palette with 4px horizontal rules
+paths:
+  - "skills/minimalist-monochrome/**"
+  - "**/skills/minimalist-monochrome/**"
 ---
 
 # MINIMALIST MONOCHROME SKILL
@@ -22,15 +31,22 @@ no gradients to create false interest.
 ## HOW TO USE THIS SKILL
 
 ### STEP 1 — Read intent before code
-Read these files in order before generating anything:
 
+#### Tier A (always — read first)
 1. `philosophy.md`           ← The soul. Read this first, always.
 2. `tokens/colors.md`        ← Pure black and white. Every rule matters.
 3. `tokens/typography.md`    ← Serif fonts as hero. The oversized scale.
+
+#### Tier B (before full pages)
 4. `tokens/borders.md`       ← Lines create structure. No shadows.
 5. `tokens/shadows.md`       ← There are none. Understand why.
 6. `tokens/motion.md`        ← Instant and binary. No easing.
 7. `tokens/spacing.md`       ← Dramatic negative space is active design.
+8. `integration/setup.md`    ← Wire Tailwind and globals before components.
+
+#### Tier C (before new components)
+9. `components/`              ← Annotated references with WHY comments.
+10. `examples/LandingPage.jsx` ← North star editorial benchmark.
 
 ### STEP 2 — Set up the project
 Follow `integration/setup.md` exactly. Wire in Tailwind config and globals.css
@@ -44,6 +60,8 @@ When building new components, ask: "Would this appear in a luxury print editoria
 ### STEP 4 — Use examples as your quality benchmark
 Read `examples/LandingPage.jsx` before generating any full page.
 It shows every token working together as a complete editorial world.
+
+For extrapolation tests, see `meta/quality-prompts.md`.
 
 ---
 
@@ -80,6 +98,8 @@ It shows every token working together as a complete editorial world.
 - Icons use strokeWidth 1 or 1.5 — thin, not chunky. Always black.
 - Focus states use 3px solid black outline — never colored rings.
 - Inverted sections (black background) use white text and white borders.
+- Border-radius is always 0px — never rounded corners on any element.
+- New components must pass the extrapolation test in `meta/quality-prompts.md`.
 
 ---
 

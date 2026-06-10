@@ -1,9 +1,19 @@
 ---
 name: linear-modern
+description: >-
+  Applies cinematic dark UI with ambient blob lighting, mouse-tracking spotlights,
+  layered shadows, and expo-out micro-interactions (Linear/Vercel/Raycast aesthetic).
+  Use when building dark developer-tool UIs, premium dashboards, marketing pages, or
+  when the user mentions linear-modern, ambient lighting, or bento grids.
 version: 1.0.0
-stack: React + Tailwind CSS + Framer Motion
-category: dark
-mood: cinematic, precise, premium, atmospheric, technical
+metadata:
+  stack: React + Tailwind CSS + Framer Motion
+  category: dark
+  mood: [cinematic, precise, premium, atmospheric, technical]
+  signature_element: multi-layer ambient shadows and gradient blobs
+paths:
+  - "skills/linear-modern/**"
+  - "**/skills/linear-modern/**"
 ---
 
 # LINEAR MODERN SKILL
@@ -21,16 +31,23 @@ This is software that feels expensive without feeling ostentatious.
 ## HOW TO USE THIS SKILL
 
 ### STEP 1 — Read intent before code
-Read these files in order before generating anything:
 
+#### Tier A (always — read first)
 1. `philosophy.md`           ← The soul. Read this first, always.
 2. `tokens/colors.md`        ← Deep space palette. Every value is deliberate.
 3. `tokens/shadows.md`       ← Multi-layer shadows. The glow system.
+
+#### Tier B (before full pages)
 4. `tokens/typography.md`    ← Inter/Geist. Gradient text treatment.
 5. `tokens/borders.md`       ← Near-invisible borders. Layered radius.
 6. `tokens/motion.md`        ← Expo-out easing. 200-300ms. Precise.
 7. `tokens/spacing.md`       ← Asymmetric bento grids. Section rhythm.
-8. `tokens/charts.md`        ← Dashboards, Charts & graphs. Data colors, tooltips, motion.
+8. `tokens/charts.md`        ← Dashboards and data visualization styling.
+9. `integration/setup.md`    ← Background layering must be wired first.
+
+#### Tier C (before new components)
+10. `components/`             ← Study WHY annotations before extrapolating.
+11. `examples/LandingPage.jsx` ← North star quality benchmark.
 
 ### STEP 2 — Set up the project
 Follow `integration/setup.md` exactly. The background system requires
@@ -45,6 +62,8 @@ each technique is applied. Study these before building new components.
 Read `examples/LandingPage.jsx` in full before building any page.
 The animated blobs, parallax hero, and bento grid are the signature
 elements — without them the design becomes flat and generic.
+
+For extrapolation tests, see `meta/quality-prompts.md`.
 
 ---
 

@@ -1,9 +1,18 @@
 ---
 name: neo-brutalism
+description: >-
+  Applies neo-brutalist UI with thick black borders, hard ink shadows, and mechanical
+  press/lift interactions on a cream canvas. Use for bold marketing sites, punk aesthetics,
+  sticker UI, or when the user mentions neo-brutalism or brutalism.
 version: 1.0.0
-stack: React + Tailwind CSS
-category: bold
-mood: [rebellious, loud, tactile, energetic, raw]
+metadata:
+  stack: React + Tailwind CSS
+  category: bold
+  mood: [rebellious, loud, tactile, energetic, raw, punk]
+  signature_element: hard zero-blur ink shadows at 45 degrees
+paths:
+  - "skills/neo-brutalism/**"
+  - "**/skills/neo-brutalism/**"
 ---
 
 # NEO-BRUTALISM SKILL
@@ -16,20 +25,29 @@ of ink. Buttons physically click down. Cards physically lift up.
 
 This is the anti-subtle. If it doesn't have a border, it doesn't exist.
 
+Core principles live in `philosophy.md` under **Core Principles**.
+
 ---
 
 ## HOW TO USE THIS SKILL
 
-### STEP 1 — Read before you code
-Read these files in order. Do not skip ahead to components.
+### STEP 1 — Read intent before code
 
-1. `philosophy.md`           ← The punk manifesto. The WHY behind every decision.
+#### Tier A (always — read first)
+1. `philosophy.md`           ← The punk manifesto. Core Principles define every decision.
 2. `tokens/colors.md`        ← 5 colors only. Strict rules. No grays, ever.
 3. `tokens/shadows.md`       ← THE defining visual element. Hard ink blocks.
+
+#### Tier B (before full pages)
 4. `tokens/typography.md`    ← Space Grotesk Black only. Uppercase. Dense.
 5. `tokens/borders.md`       ← Border-4 everywhere. Sharp or full-round. Nothing in between.
 6. `tokens/motion.md`        ← Mechanical, snappy, arcade-like. No soft easing.
 7. `tokens/spacing.md`       ← Dense grids, asymmetric, sticker layering.
+8. `integration/setup.md`    ← Hard shadow utilities and fonts must be wired first.
+
+#### Tier C (before new components)
+9. `components/`              ← WHY annotations on borders, shadows, and mechanics.
+10. `examples/LandingPage.jsx` ← North star — button push, card lift, textures.
 
 ### STEP 2 — Integration
 Follow `integration/setup.md`. The hard shadow utilities, Space Grotesk font,
@@ -44,28 +62,7 @@ the signature — miss any one and the design reads as generic.
 Every component file includes WHY annotations explaining the border decisions,
 shadow choices, and interaction mechanics. Read them before copying.
 
----
-
-## THE THREE LAWS
-
-These three rules define every visual decision in this skill:
-
-### Law 1: Everything has a border
-`border-4 border-black` is the default. Always. Cards, buttons, inputs,
-nav items, badges, containers — if it's visible, it has a border.
-An element without a border is invisible in this world.
-
-### Law 2: Shadows are solid ink
-No blur. No spread. No soft diffusion. Shadows in this system are hard
-rectangles offset at 45 degrees: `box-shadow: 8px 8px 0px 0px #000`.
-They simulate physical layering — one piece of paper on top of another.
-Remove the blur, you get brutalism. Add blur, you get corporate SaaS.
-
-### Law 3: Interactions are mechanical
-Buttons CLICK DOWN (translate to cover their shadow on active).
-Cards LIFT UP (translate upward + shadow grows on hover).
-Transitions are FAST (100–200ms). Easing is LINEAR or EASE-OUT.
-Never ease-in-out. Never slow. Never soft.
+For extrapolation tests, see `meta/quality-prompts.md`.
 
 ---
 
@@ -98,15 +95,15 @@ Never ease-in-out. Never slow. Never soft.
 - Background is never flat — add halftone, grid, or noise texture.
 - Text in buttons is UPPERCASE, font-bold minimum, tracking-wide.
 - Shadows always have zero blur — never use Tailwind's built-in shadow utilities.
-- No subtle gray text — it's pure black or a color.
-- Decorative elements (stars, shapes, badges) use `pointer-events-none`.
-- Inputs focus with background color change (yellow), not a glow ring.
-- Badges and sticker elements are rotated ± 1–3 degrees.
+- Sticker badges rotate `-6deg` to `6deg` — never perfectly horizontal.
+- Display headings use text-stroke hollow treatment where specified in examples.
+- Color blocks alternate between accent colors — never a single flat section.
+- New components must pass the extrapolation test in `meta/quality-prompts.md`.
 
 ---
 
 ## STACK REQUIREMENTS
 - React 18+
 - Tailwind CSS 3+
-- Space Grotesk (Google Fonts, weights 700/900)
-- Lucide React (strokeWidth 3–4 for thick, bold strokes)
+- Space Grotesk (Google Fonts, weight 700/900)
+- Lucide React (strokeWidth 2.5, chunky strokes)

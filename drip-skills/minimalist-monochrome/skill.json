@@ -4,12 +4,35 @@
   "description": "Editorial luxury design. Pure black and white only. Oversized Playfair Display serif. Hard section rules. Inversion as the only emphasis. No shadows, no radius, no color.",
   "category": "light",
   "mood": ["austere", "authoritative", "editorial", "timeless", "intellectual"],
-  "stack": ["react", "tailwind"],
+  "stack": ["react", "tailwind", "lucide-react"],
   "dependencies": {
     "lucide-react": "^0.263.0"
   },
   "devDependencies": {},
   "author": "getdrip",
-  "components": 12,
-  "tags": ["monochrome", "editorial", "serif", "luxury", "minimal", "black-white", "fashion", "architectural"]
+  "preview": "https://getdrip.dev/skills/minimalist-monochrome",
+  "docs": "https://getdrip.dev/docs/minimalist-monochrome",
+  "components": 7,
+  "tags": ["monochrome", "editorial", "serif", "luxury", "minimal", "black-white", "fashion", "architectural"],
+  "palette": {
+    "background": "#FFFFFF",
+    "foreground": "#000000",
+    "muted": "#525252",
+    "border": "#E5E5E5"
+  },
+  "fonts": {
+    "heading": "Playfair Display",
+    "body": "Source Serif 4",
+    "mono": "JetBrains Mono"
+  },
+  "signature_traits": [
+    "Pure black #000000 and white #FFFFFF only — no accent colors",
+    "Border-radius 0px everywhere — no exceptions",
+    "No shadows ever — depth from inversion and border weight",
+    "Hover inversion: black bg becomes white or vice versa",
+    "4px black horizontal rules between all major sections",
+    "Oversized Playfair Display headlines as typographic objects",
+    "Maximum 100ms instant binary transitions",
+    "Section texture layers mandatory — lines, grid, or diagonal"
+  ]
 }

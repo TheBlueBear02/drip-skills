@@ -1,4 +1,3 @@
-```jsx
 // LUXURY BOLD — Card.jsx
 //
 // WHY THIS LOOKS THE WAY IT DOES:
@@ -34,4 +33,3 @@ export function Card({ children }) {
 //
 // <Card>Content goes here</Card>
 // <Card>Another card in the grid</Card>
-```
