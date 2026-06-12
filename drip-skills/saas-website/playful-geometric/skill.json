@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Memphis-inspired design system. Hard pop shadows, bouncy interactions, confetti color palette. The antidote to generic AI UIs.",
   "category": "light",
+  "projectType": "saas-website",
+  "projectTypeLabel": "SaaS Website",
   "mood": ["playful", "optimistic", "tactile", "energetic"],
   "stack": ["react", "tailwind", "framer-motion", "lucide-react"],
   "dependencies": {

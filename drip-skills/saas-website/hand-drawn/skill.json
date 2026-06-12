@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Authentic imperfection and human touch. Wobbly multi-value border-radius, hard zero-blur offset shadows, Kalam marker headings, Patrick Hand body, dot-grid paper texture, tape and tack decorations, and the press-flat button mechanic. Spontaneous, creative, playful.",
   "category": "playful",
+  "projectType": "saas-website",
+  "projectTypeLabel": "SaaS Website",
   "mood": ["sketchy", "creative", "human", "approachable", "spontaneous", "playful"],
   "stack": ["react", "tailwind"],
   "dependencies": {

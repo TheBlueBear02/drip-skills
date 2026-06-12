@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "High-Fidelity Claymorphism — soft matte silicone surfaces, candy-store colors, 4-layer shadow stacks, and bouncy micro-interactions. Zero sharp corners. Buttons squish. Cards float.",
   "category": "colorful",
+  "projectType": "saas-website",
+  "projectTypeLabel": "SaaS Website",
   "mood": ["playful", "tactile", "joyful", "premium", "soft"],
   "stack": ["react", "tailwind", "lucide-react"],
   "dependencies": {

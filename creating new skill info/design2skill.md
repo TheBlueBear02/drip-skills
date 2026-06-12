@@ -934,7 +934,7 @@ you predicted before building it.
 
 ### Phase 6 — Quality Check
 Run all 5 laws from Part 4 (see `quality-tests.md` for full procedure).
-Run `node scripts/validate-skill.mjs drip-skills/skill-name` for structural compliance.
+Run `node scripts/validate-skill.mjs drip-skills/{projectType}/skill-name` for structural compliance (e.g. `drip-skills/saas-website/my-skill` for first-party, or `drip-skills/generated/saas-website/my-skill` for community WIP).
 Fix anything that fails before publishing.
 
 ---

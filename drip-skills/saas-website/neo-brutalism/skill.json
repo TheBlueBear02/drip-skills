@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Digital punk rebellion against polished SaaS. Thick black borders. Hard ink shadows. Mechanical button press. Cream canvas. Space Grotesk Black. Loud, raw, confident.",
   "category": "bold",
+  "projectType": "saas-website",
+  "projectTypeLabel": "SaaS Website",
   "mood": ["rebellious", "loud", "tactile", "energetic", "raw", "punk"],
   "stack": ["react", "tailwind"],
   "dependencies": {

@@ -6,11 +6,13 @@ on:
       - "drip-skills/**"
       - "scripts/validate-skill.mjs"
       - "registry.json"
+      - "project-types.json"
   pull_request:
     paths:
       - "drip-skills/**"
       - "scripts/validate-skill.mjs"
       - "registry.json"
+      - "project-types.json"
 
 jobs:
   validate:
@@ -25,22 +27,19 @@ jobs:
       - name: Validate all skills
         run: node scripts/validate-skill.mjs
 
-      - name: Verify registry covers production skills
+      - name: Verify registry skills exist at nested paths
         run: |
           node -e "
           const fs = require('fs');
           const path = require('path');
           const registry = JSON.parse(fs.readFileSync('registry.json', 'utf8'));
-          const root = 'drip-skills';
-          const skills = fs.readdirSync(root, { withFileTypes: true })
-            .filter(d => d.isDirectory() && d.name !== 'generated')
-            .filter(d => fs.existsSync(path.join(root, d.name, 'SKILL.md')))
-            .map(d => d.name);
-          const registered = new Set(registry.map(r => r.name));
-          const missing = skills.filter(s => !registered.has(s));
+          const missing = registry.filter((entry) => {
+            const skillPath = path.join('drip-skills', entry.projectType, entry.name, 'SKILL.md');
+            return !fs.existsSync(skillPath);
+          });
           if (missing.length) {
-            console.error('Registry missing skills:', missing.join(', '));
+            console.error('Registry entries missing on disk:', missing.map((e) => e.name).join(', '));
             process.exit(1);
           }
-          console.log('Registry covers all', skills.length, 'production skills.');
+          console.log('All', registry.length, 'registry skills exist at drip-skills/{projectType}/{name}/.');
           "

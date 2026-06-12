@@ -4,6 +4,8 @@
     "version": "1.1.0",
     "description": "Memphis-inspired. Hard pop shadows. Bouncy interactions. Confetti palette.",
     "category": "light",
+    "projectType": "saas-website",
+    "projectTypeLabel": "SaaS Website",
     "mood": ["playful", "optimistic", "tactile", "energetic"]
   },
   {
@@ -11,6 +13,8 @@
     "version": "1.1.0",
     "description": "Editorial luxury design. Pure black and white only. Oversized Playfair Display serif. Hard section rules. Inversion as the only emphasis. No shadows, no radius, no color.",
     "category": "light",
+    "projectType": "saas-website",
+    "projectTypeLabel": "SaaS Website",
     "mood": ["austere", "authoritative", "editorial", "timeless", "intellectual"]
   },
   {
@@ -18,6 +22,8 @@
     "version": "1.1.0",
     "description": "Cinematic dark UI with ambient blob lighting, mouse-tracking spotlights, layered shadows, and expo-out micro-interactions. The Linear/Vercel/Raycast aesthetic.",
     "category": "dark",
+    "projectType": "saas-website",
+    "projectTypeLabel": "SaaS Website",
     "mood": ["cinematic", "precise", "premium", "atmospheric", "technical"]
   },
   {
@@ -25,6 +31,8 @@
     "version": "1.1.0",
     "description": "Digital punk rebellion against polished SaaS. Thick black borders. Hard ink shadows. Mechanical button press. Cream canvas. Space Grotesk Black. Loud, raw, confident.",
     "category": "bold",
+    "projectType": "saas-website",
+    "projectTypeLabel": "SaaS Website",
     "mood": ["rebellious", "loud", "tactile", "energetic", "raw", "punk"]
   },
   {
@@ -32,6 +40,8 @@
     "version": "1.1.0",
     "description": "Authentic imperfection and human touch. Wobbly multi-value border-radius, hard zero-blur offset shadows, Kalam marker headings, Patrick Hand body, dot-grid paper texture, tape and tack decorations, and the press-flat button mechanic. Spontaneous, creative, playful.",
     "category": "playful",
+    "projectType": "saas-website",
+    "projectTypeLabel": "SaaS Website",
     "mood": ["sketchy", "creative", "human", "approachable", "spontaneous", "playful"]
   },
   {
@@ -39,6 +49,8 @@
     "version": "1.1.0",
     "description": "Opulence, mathematical precision, and architectural grandeur. Obsidian black with metallic gold, diagonal crosshatch texture, zero border-radius, Marcellus all-caps headings, rotated diamond icon containers, gold glows (never drop shadows), Roman numerals, and theatrical 500ms transitions. The Gatsby aesthetic.",
     "category": "luxury",
+    "projectType": "saas-website",
+    "projectTypeLabel": "SaaS Website",
     "mood": ["opulent", "geometric", "theatrical", "timeless", "architectural", "exclusive"]
   },
   {
@@ -46,6 +58,8 @@
     "version": "1.1.0",
     "description": "High-Fidelity Claymorphism — soft matte silicone surfaces, candy-store colors, 4-layer shadow stacks, and bouncy micro-interactions. Zero sharp corners. Buttons squish. Cards float.",
     "category": "colorful",
+    "projectType": "saas-website",
+    "projectTypeLabel": "SaaS Website",
     "mood": ["playful", "tactile", "joyful", "premium", "soft"]
   }
 ]

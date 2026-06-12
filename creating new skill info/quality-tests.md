@@ -87,18 +87,18 @@ Run `node scripts/validate-skill.mjs` first for structural compliance, then run 
 # Validate all production skills
 node scripts/validate-skill.mjs
 
-# Validate a single skill
-node scripts/validate-skill.mjs drip-skills/linear-modern
+# Validate a single first-party skill
+node scripts/validate-skill.mjs drip-skills/saas-website/linear-modern
 
 # Validate WIP generated skill (warnings only for quality-prompts)
-node scripts/validate-skill.mjs drip-skills/generated/luxury-bold
+node scripts/validate-skill.mjs drip-skills/generated/saas-website/luxury-bold
 ```
 
 ---
 
 ## Promotion Checklist (generated → production)
 
-Before moving a skill out of `drip-skills/generated/`:
+Before moving a skill out of `drip-skills/generated/{projectType}/` to `drip-skills/{projectType}/`:
 
 - [ ] Passes `validate-skill.mjs` with zero errors
 - [ ] Passes all 5 laws manually

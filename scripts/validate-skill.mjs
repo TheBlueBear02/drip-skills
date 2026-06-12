@@ -67,12 +67,11 @@ async function findSkillDirs() {
       const full = join(dir, entry.name);
       const skillMd = join(full, "SKILL.md");
       if (await exists(skillMd)) {
-        dirs.push({ path: full, generated: isGenerated || dir === GENERATED_PREFIX });
+        dirs.push({ path: full, generated: isGenerated });
         continue;
       }
-      if (entry.name === "generated") {
-        await walk(full, true);
-      }
+      const childGenerated = isGenerated || entry.name === "generated";
+      await walk(full, childGenerated);
     }
   }
 

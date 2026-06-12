@@ -1,0 +1,16 @@
+[
+  {
+    "id": "saas-website",
+    "label": "SaaS Website",
+    "description": "Full product websites for SaaS tools, developer utilities, and web apps. Includes hero, features, pricing, and CTA sections.",
+    "skills": [
+      "linear-modern",
+      "neo-brutalism",
+      "clay-premium",
+      "minimalist-monochrome",
+      "playful-geometric",
+      "hand-drawn",
+      "art-deco"
+    ]
+  }
+]

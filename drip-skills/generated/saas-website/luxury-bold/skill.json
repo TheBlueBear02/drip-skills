@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "Bold minimalism with architectural typography and neon yellow accent on monochrome surfaces. WIP — not in registry.",
   "category": "minimal",
+  "projectType": "saas-website",
+  "projectTypeLabel": "SaaS Website",
   "mood": ["bold", "minimalistic", "sophisticated", "contemporary", "structured"],
   "stack": ["react", "tailwind", "framer-motion"],
   "dependencies": {

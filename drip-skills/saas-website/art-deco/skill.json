@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Opulence, mathematical precision, and architectural grandeur. Obsidian black with metallic gold, diagonal crosshatch texture, zero border-radius, Marcellus all-caps headings, rotated diamond icon containers, gold glows (never drop shadows), Roman numerals, and theatrical 500ms transitions. The Gatsby aesthetic.",
   "category": "luxury",
+  "projectType": "saas-website",
+  "projectTypeLabel": "SaaS Website",
   "mood": ["opulent", "geometric", "theatrical", "timeless", "architectural", "exclusive"],
   "stack": ["react", "tailwind"],
   "dependencies": {

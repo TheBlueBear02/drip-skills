@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Editorial luxury design. Pure black and white only. Oversized Playfair Display serif. Hard section rules. Inversion as the only emphasis. No shadows, no radius, no color.",
   "category": "light",
+  "projectType": "saas-website",
+  "projectTypeLabel": "SaaS Website",
   "mood": ["austere", "authoritative", "editorial", "timeless", "intellectual"],
   "stack": ["react", "tailwind", "lucide-react"],
   "dependencies": {

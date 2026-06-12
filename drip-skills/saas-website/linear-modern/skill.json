@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Cinematic dark UI with ambient blob lighting, mouse-tracking spotlights, layered shadows, and expo-out micro-interactions. The Linear/Vercel/Raycast aesthetic.",
   "category": "dark",
+  "projectType": "saas-website",
+  "projectTypeLabel": "SaaS Website",
   "mood": ["cinematic", "precise", "premium", "atmospheric", "technical"],
   "stack": ["react", "tailwind", "framer-motion", "lucide-react"],
   "dependencies": {
