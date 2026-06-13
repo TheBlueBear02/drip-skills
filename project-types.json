@@ -12,5 +12,13 @@
       "hand-drawn",
       "art-deco"
     ]
+  },
+  {
+    "id": "dashboard",
+    "label": "Dashboard",
+    "description": "Analytics dashboards, admin panels, and reporting interfaces. Includes KPI cards, data tables, charts, and sidebar navigation.",
+    "skills": [
+      "analytics-dark"
+    ]
   }
 ]

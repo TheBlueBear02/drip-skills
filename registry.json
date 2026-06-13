@@ -61,5 +61,14 @@
     "projectType": "saas-website",
     "projectTypeLabel": "SaaS Website",
     "mood": ["playful", "tactile", "joyful", "premium", "soft"]
+  },
+  {
+    "name": "analytics-dark",
+    "version": "1.0.0",
+    "description": "Professional command-center dashboard aesthetic. Ultra-tight data hierarchy, semantic color, monochromatic precision. The Segment/Vercel/Linear analytics look — built for reading data fast, not looking decorative.",
+    "category": "dark",
+    "projectType": "dashboard",
+    "projectTypeLabel": "Dashboard",
+    "mood": ["precise", "utilitarian", "commanding", "focused", "professional"]
   }
 ]
