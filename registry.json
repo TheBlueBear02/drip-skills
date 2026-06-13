@@ -79,5 +79,14 @@
     "projectType": "dashboard",
     "projectTypeLabel": "Dashboard",
     "mood": ["vibrant", "gradient", "airy", "friendly", "polished", "energetic"]
+  },
+  {
+    "name": "frosted-obsidian",
+    "version": "1.0.0",
+    "description": "Glassmorphism dashboard aesthetic — frosted translucent panels over atmospheric scenes, white active states, semantic chart color. The visionOS/Raycast/Linear health-analytics look.",
+    "category": "dark",
+    "projectType": "dashboard",
+    "projectTypeLabel": "Dashboard",
+    "mood": ["glassmorphism", "translucent", "futuristic", "high-contrast", "sophisticated"]
   }
 ]
