@@ -70,5 +70,14 @@
     "projectType": "dashboard",
     "projectTypeLabel": "Dashboard",
     "mood": ["precise", "utilitarian", "commanding", "focused", "professional"]
+  },
+  {
+    "name": "aurora-soft",
+    "version": "1.0.0",
+    "description": "A bright, light SaaS analytics dashboard where saturated color lives only inside the data — an indigo→violet→blue→teal gradient spectrum in charts — while the chrome stays neutral white-on-cool-grey.",
+    "category": "light",
+    "projectType": "dashboard",
+    "projectTypeLabel": "Dashboard",
+    "mood": ["vibrant", "gradient", "airy", "friendly", "polished", "energetic"]
   }
 ]
